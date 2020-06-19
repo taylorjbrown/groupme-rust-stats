@@ -41,9 +41,9 @@ Two folders will be created when run:
 			- Top Liked Messages
 			- Ratio of amount of messages to likes
 			- Who Liked My Messages:
-				- An ordered list of other users in the group and their total like count this user's messages
+				- An ordered list of the other users in the group with a total like count on this user's messages
 			- Whos Messages Did I Like
-				- An ordered list of other users in the group and current user's total like count for their messages
+				- An ordered list of other users in the group with the current user's total like count for their messages
 
 
 How To Run:
