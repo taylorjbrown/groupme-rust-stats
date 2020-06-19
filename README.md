@@ -1,7 +1,7 @@
 A Tool to download all history of a GroupMe chat room
 and runs a few stats on each user's messages in the group:
 
-Prerequists:
+Prerequisites:
 1) Create an application api key for GroupMe API
 	- Go to https://dev.groupme.com/applications
 	- Login with your account
