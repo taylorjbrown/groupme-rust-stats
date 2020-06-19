@@ -8,7 +8,7 @@ Prerequists:
 	- Click "Create Application"
 	- Set callback to "localhost"
 	- Click save
-	- Copy the value at "<user name>'s Access Token"
+	- Copy the value at `<user name>'s Access Token`
 		- This will be used in the settings file as the `<Groupme_Api_Key>`
 2) Get the group chat id:
 	- Go to https://web.groupme.com/chats
@@ -18,7 +18,7 @@ Prerequists:
 	- Look at the networking tab
 	- Find the URL that matches this pattern:
 		- https://api.groupme.com/v3/groups/0000000/messages?acceptFiles=1&limit=10
-		- 0000000 -> This is the chat's Id, used as the in settings file
+		- 0000000 -> This is the chat's Id, used in settings file as
 		`<Groupme_Chat_Ids>`
 
 
@@ -64,7 +64,7 @@ How To Run:
 
 		![Alt text](readmePic/ExpectedOutPut.png?raw=true "ExpectedOutput")
 - Option 2: (use binary file and run from command line/terminal)
-	- Download binary from the releases (supports windows and linux (compiled on ubuntu 18)): 
+	- Download binary from the releases (supports windows and linux [compiled on ubuntu 18]): 
 		- https://github.com/taylorjbrown/groupme-rust-stats/releases/latest
 	- Create a folder, add the downloaded binary to it
 	- Create a Settings.toml in the same folder as the binary
