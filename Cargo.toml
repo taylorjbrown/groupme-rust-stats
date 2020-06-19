@@ -1,5 +1,5 @@
 [package]
-name = "groupme-rust-client"
+name = "groupme-rust-stats"
 version = "0.1.0"
 authors = ["taylorjbrown <taylorjbrown@protonmail.com>"]
 edition = "2018"

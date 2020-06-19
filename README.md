@@ -41,8 +41,21 @@ How To Run:
 		- `cargo run`
 	- On complete you should see output like those below message:
 		![Alt text](readmePic/ExpectedOutPut.png?raw=true "ExpectedOutput")
-- Option 2: (use linked binary)
-	- download linux binary:
-	- download windows binary:
-	- download mac binary:
+- Option 2: (use binary file and run from command line/terminal)
+	- Download binary and settings file: 
+		- linux binary:
+		- windows binary:
+		- mac binary:
+	- Change Settings.default.toml to Settings.toml and add the following information:
+
+		group_ids = `<Groupme_Chat_Id` <br>
+		api_key = `<Groupme_Api_Key>` <br>
+		output_folder = `<Relative_Path_Loction_For_Output_Folder>` <br>
+		results_folder = `<Relative_Path_Location_For_Results_Folder>`
+
+	- Use command: 
+		- `groupme-rust-stats`
+	- On complete you should see output like those below message:
+		![Alt text](readmePic/ExpectedOutPut.png?raw=true "ExpectedOutput")
+
 
