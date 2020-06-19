@@ -64,17 +64,19 @@ How To Run:
 
 		![Alt text](readmePic/ExpectedOutPut.png?raw=true "ExpectedOutput")
 - Option 2: (use binary file and run from command line/terminal)
-	- Download binary and settings file: 
-		- linux binary:
-		- windows binary:
-	- Change Settings.default.toml to Settings.toml and add the following information:
+	- Download binary from the releases (supports windows and linux (compiled on ubuntu 18)): 
+		- https://github.com/taylorjbrown/groupme-rust-stats/releases/latest
+	- Create a folder, add the downloaded binary to it
+	- Create a Settings.toml in the same folder as the binary
+	- Add the following information to the settings file:
 
 		group_ids = `<Groupme_Chat_Ids>` <br>
 		api_key = `<Groupme_Api_Key>` <br>
 		output_folder = `<Relative_Path_Loction_For_Output_Folder>` <br>
 		results_folder = `<Relative_Path_Location_For_Results_Folder>`
 
-	- Use command: 
+	- Open command-line/terminal, navigate to folder that holds the binary
+	- Run the following command: 
 		- `groupme-rust-stats`
 	- On complete you should see output like those below message:
 
