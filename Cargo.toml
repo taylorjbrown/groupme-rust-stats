@@ -3,7 +3,10 @@ name = "groupme-rust-stats"
 version = "1.0.0"
 authors = ["taylorjbrown <taylorjbrown@protonmail.com>"]
 edition = "2018"
-
+license-file = "LICENSE.md"
+readme = "README.md"
+keywords = ["groupme", "user-stats", "download"]
+repository = "https://github.com/taylorjbrown/groupme-rust-stats"
 
 [dependencies]
 config = "0.9"
