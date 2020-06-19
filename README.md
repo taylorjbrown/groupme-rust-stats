@@ -34,7 +34,7 @@ Two folders will be created when run:
    
 	- users.csv:
 
-			| userId | usernames (separated by comma)
+			| userId | usernames (separated by comma) |
 	- results.txt:
 		- For each user in group, this file holds the follow stats:
 			- Total Likes
@@ -67,7 +67,6 @@ How To Run:
 	- Download binary and settings file: 
 		- linux binary:
 		- windows binary:
-		- mac binary:
 	- Change Settings.default.toml to Settings.toml and add the following information:
 
 		group_ids = `<Groupme_Chat_Ids>` <br>
