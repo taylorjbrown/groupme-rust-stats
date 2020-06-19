@@ -81,5 +81,17 @@ How To Run:
 	- On complete you should see an output like the one below:
 
 		![Alt text](readmePic/ExpectedOutPut.png?raw=true "ExpectedOutput")
+- Option 3: (install from cargo package manager)
+	- Have rust runtime installed on machine
+	- Run `cargo install groupme-rust-stats`
+	- Add a Settings.toml file, in current folder, with the following details:
+	
+	
+		group_ids = `<Groupme_Chat_Ids>` <br>
+		api_key = `<Groupme_Api_Key>` <br>
+		output_folder = `<Relative_Path_Loction_For_Output_Folder>` <br>
+		results_folder = `<Relative_Path_Location_For_Results_Folder>`
+
+	- Run package with `~/.cargo/bin/groupme-rust-stats`
 
 
