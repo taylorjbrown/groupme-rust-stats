@@ -1,6 +1,27 @@
 A Tool to download all history of a GroupMe chat room
 and runs a few stats on each user's messages in the group:
 
+Prerequists:
+1) Create an application api key for GroupMe API
+	- Go to https://dev.groupme.com/applications
+	- Login with your account
+	- Click "Create Application"
+	- Set callback to "localhost"
+	- Click save
+	- Copy the value at "<user name>'s Access Token"
+		- This will be used in the settings file as the `<Groupme_Api_Key>`
+2) Get the group chat id:
+	- Go to https://web.groupme.com/chats
+	- Login with you account
+	- Open the developer console by following one of these steps:
+		https://balsamiq.com/support/faqs/browserconsole/
+	- Look at the networking tab
+	- Find the URL that matches this pattern:
+		- https://api.groupme.com/v3/groups/0000000/messages?acceptFiles=1&limit=10
+		- 0000000 -> This is the chat's Id, used as the in settings file
+		`<Groupme_Chat_Ids>`
+
+
 Output:
 
 Two folders will be created when run:
@@ -32,7 +53,7 @@ How To Run:
 	- Clone repository
 	- Change Settings.default.toml to Settings.toml and add the following information:
 
-		group_ids = `<Groupme_Chat_Id` <br>
+		group_ids = `<Groupme_Chat_Ids>` <br>
 		api_key = `<Groupme_Api_Key>` <br>
 		output_folder = `<Relative_Path_Loction_For_Output_Folder>` <br>
 		results_folder = `<Relative_Path_Location_For_Results_Folder>`
@@ -40,6 +61,7 @@ How To Run:
 	- Use command: 
 		- `cargo run`
 	- On complete you should see output like those below message:
+
 		![Alt text](readmePic/ExpectedOutPut.png?raw=true "ExpectedOutput")
 - Option 2: (use binary file and run from command line/terminal)
 	- Download binary and settings file: 
@@ -48,7 +70,7 @@ How To Run:
 		- mac binary:
 	- Change Settings.default.toml to Settings.toml and add the following information:
 
-		group_ids = `<Groupme_Chat_Id` <br>
+		group_ids = `<Groupme_Chat_Ids>` <br>
 		api_key = `<Groupme_Api_Key>` <br>
 		output_folder = `<Relative_Path_Loction_For_Output_Folder>` <br>
 		results_folder = `<Relative_Path_Location_For_Results_Folder>`
@@ -56,6 +78,7 @@ How To Run:
 	- Use command: 
 		- `groupme-rust-stats`
 	- On complete you should see output like those below message:
+
 		![Alt text](readmePic/ExpectedOutPut.png?raw=true "ExpectedOutput")
 
 
