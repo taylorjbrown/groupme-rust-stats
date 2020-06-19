@@ -77,7 +77,7 @@ How To Run:
 
 	- Open command-line/terminal, navigate to folder that holds the binary
 	- Run the following command: 
-		- `groupme-rust-stats`
+		- `./groupme-rust-stats`
 	- On complete you should see output like those below message:
 
 		![Alt text](readmePic/ExpectedOutPut.png?raw=true "ExpectedOutput")
