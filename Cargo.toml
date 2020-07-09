@@ -1,12 +1,13 @@
 [package]
 name = "groupme-rust-stats"
-version = "1.0.2"
+version = "1.0.3"
 authors = ["taylorjbrown <taylorjbrown@protonmail.com>"]
 edition = "2018"
 description = "A rust command line tool which downloads the complete history of a groupme chat group. It also runs a few stats on the data and displays as a plain text file."
 license-file = "LICENSE"
 readme = "README.md"
-keywords = ["groupme", "user-stats", "download"]
+keywords = ["groupme", "user-stats", "download", "command-line-utilities"]
+categories = ["command-line-utilities"]
 repository = "https://github.com/taylorjbrown/groupme-rust-stats"
 
 [dependencies]
