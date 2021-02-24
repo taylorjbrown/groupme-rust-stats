@@ -22,7 +22,7 @@ Prerequisites:
 		`<Groupme_Chat_Ids>`
 
 
-Output:
+Output:url
 
 Two folders will be created when run:
 - raw_output:
@@ -54,9 +54,9 @@ How To Run:
 	- Change Settings.default.toml to Settings.toml and add the following information:
 
 		group_ids = `<Groupme_Chat_Ids>` <br>
-		api_key = `<Groupme_Api_Key>` <br>
-		output_folder = `<Relative_Path_Loction_For_Output_Folder>` <br>
-		results_folder = `<Relative_Path_Location_For_Results_Folder>`
+		api_key = `"<Groupme_Api_Key>"` <br>
+		output_folder = `"<Relative_Path_Loction_For_Output_Folder>"` <br>
+		results_folder = `"<Relative_Path_Location_For_Results_Folder>"`
 
 	- Use command: 
 		- `cargo run`
@@ -71,9 +71,9 @@ How To Run:
 	- Add the following information to the settings file:
 
 		group_ids = `<Groupme_Chat_Ids>` <br>
-		api_key = `<Groupme_Api_Key>` <br>
-		output_folder = `<Relative_Path_Loction_For_Output_Folder>` <br>
-		results_folder = `<Relative_Path_Location_For_Results_Folder>`
+		api_key = `"<Groupme_Api_Key>"` <br>
+		output_folder = `"<Relative_Path_Loction_For_Output_Folder>"` <br>
+		results_folder = `"<Relative_Path_Location_For_Results_Folder>"`
 
 	- Open command-line/terminal, navigate to folder that holds the binary
 	- Run the following command: 
@@ -88,9 +88,9 @@ How To Run:
 	
 	
 		group_ids = `<Groupme_Chat_Ids>` <br>
-		api_key = `<Groupme_Api_Key>` <br>
-		output_folder = `<Relative_Path_Loction_For_Output_Folder>` <br>
-		results_folder = `<Relative_Path_Location_For_Results_Folder>`
+		api_key = `"<Groupme_Api_Key>"` <br>
+		output_folder = `"<Relative_Path_Loction_For_Output_Folder>"` <br>
+		results_folder = `"<Relative_Path_Location_For_Results_Folder>"`
 
 	- Run package with `~/.cargo/bin/groupme-rust-stats`
 
