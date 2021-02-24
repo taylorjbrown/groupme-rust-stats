@@ -66,6 +66,7 @@ How To Run:
 - Option 2: (use binary file and run from command line/terminal)
 	- Download binary from the releases (supports windows and linux [compiled on ubuntu 18]): 
 		- https://github.com/taylorjbrown/groupme-rust-stats/releases/latest
+		- If you are using the ubuntu version (non .exe file) make sure to run `chmod +x` on the file after the download
 	- Create a folder, add the downloaded binary to it
 	- Create a Settings.toml in the same folder as the binary
 	- Add the following information to the settings file:
