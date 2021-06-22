@@ -9,7 +9,7 @@ pub fn save_as_text(results: Vec<Vec<String>>){
 		.merge(config::File::with_name("Settings")).unwrap()
 		.merge(config::Environment::with_prefix("APP")).unwrap();
 
-	let filename =  settings.get_str("results_folder").unwrap_or_default() + "results.txt";
+	let filename =  settings.get_str("results_folder").unwrap_or_default() + "/results.txt";
 
     let mut f = File::create(filename).expect("Unable to open file");
     for cur_user in results {

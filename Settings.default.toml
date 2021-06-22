@@ -1,0 +1,4 @@
+group_ids = <Groupme_Chat_Ids>
+api_key = "<Groupme_Api_Key>"
+output_folder = "<Relative_Path_Loction_For_Output_Folder>"
+results_folder = "<Relative_Path_Location_For_Results_Folder>"

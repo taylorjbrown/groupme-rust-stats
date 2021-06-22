@@ -141,8 +141,8 @@ pub fn write_users_as_csv(user_stats:HashMap<String, UserStats>) -> Result<(),Bo
     let data = String::from_utf8(writer.into_inner()?)?;
 
     let filetype = ".csv";
-    let mut filename = "./results/".to_string();
-    filename.push_str("users");
+    let mut filename = results_folder_name();
+    filename.push_str("/users");
     filename.push_str(&filetype);
 
     let mut f = File::create(filename).expect("Unable to open file");
@@ -151,4 +151,14 @@ pub fn write_users_as_csv(user_stats:HashMap<String, UserStats>) -> Result<(),Bo
     f.write_all(&message_bytes).expect("Unable to write data");
 
     Ok(())
+}
+
+pub fn results_folder_name() -> String {
+    let mut settings = config::Config::default();
+    settings
+		.merge(config::File::with_name("Settings")).unwrap()
+		.merge(config::Environment::with_prefix("APP")).unwrap();
+
+    return settings.get_str("results_folder")
+                                        .unwrap_or_default();
 }

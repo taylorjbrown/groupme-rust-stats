@@ -50,6 +50,7 @@ pub fn create_filename(data: &Data, output_folder: &String) -> String{
     let mut filename = output_folder.to_string();
     let delimiter = "-";
     let filetype = ".json";
+    filename.push_str("/");
     filename.push_str(&data.start_timestamp.to_string());
     filename.push_str(&delimiter);
     filename.push_str(&data.next_start_timestamp.to_string());
@@ -62,8 +63,12 @@ pub fn read_all_in_dir() -> Result<Vec<Messages>, ()> {
     settings
 		.merge(config::File::with_name("Settings")).unwrap()
 		.merge(config::Environment::with_prefix("APP")).unwrap();
+
     let output_folder =  settings.get_str("output_folder")
 										.unwrap_or_default();
+
+    let results_folder = settings.get_str("results_folder")
+                                        .unwrap_or_default();
 
     let directory:&str = &(output_folder.to_owned() + "/*.json");
     let mut files: Vec<String> = Vec::new();
@@ -86,7 +91,7 @@ pub fn read_all_in_dir() -> Result<Vec<Messages>, ()> {
         
     let messages :Vec<Messages> = par_iter.collect();
 
-    write_messages_as_csv(messages.clone()).unwrap();
+    write_messages_as_csv(messages.clone(), results_folder.clone()).unwrap();
 
     Ok(messages)
 }
@@ -102,7 +107,7 @@ pub fn read_file_to_json(filename:&str) -> Vec<Messages>{
     return messages;
 }
 
-pub fn write_messages_as_csv(messages:Vec<Messages>) -> Result<(), Box<dyn error::Error>> {
+pub fn write_messages_as_csv(messages:Vec<Messages>, results_folder: String) -> Result<(), Box<dyn error::Error>> {
     let mut writer = WriterBuilder::new()
          .has_headers(false)
          .from_writer(vec![]);
@@ -125,8 +130,9 @@ pub fn write_messages_as_csv(messages:Vec<Messages>) -> Result<(), Box<dyn error
     let data = String::from_utf8(writer.into_inner()?)?;
 
     let filetype = ".csv";
-    let mut filename = "./results/".to_string();
-    filename.push_str("messages");
+    
+    let mut filename = results_folder.to_string();
+    filename.push_str("/messages");
     filename.push_str(&filetype);
 
     let mut f = File::create(filename).expect("Unable to open file");
