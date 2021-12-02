@@ -64,7 +64,7 @@ How To Run:
 
 		![Alt text](readmePic/ExpectedOutPut.png?raw=true "ExpectedOutput")
 - Option 2: (use binary file and run from command line/terminal)
-	- Download binary from the releases (supports windows and linux [compiled on ubuntu 18]): 
+	- Download binary from the releases (supports windows and linux [compiled on ubuntu 20.04]): 
 		- https://github.com/taylorjbrown/groupme-rust-stats/releases/latest
 		- If you are using the ubuntu version (non .exe file) make sure to run `chmod +x` on the file after the download
 	- Create a folder, add the downloaded binary to it
