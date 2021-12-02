@@ -96,3 +96,5 @@ How To Run:
 	- Run package with `~/.cargo/bin/groupme-rust-stats`
 
 
+#### If you found this tool useful and feel like buying me a coffee/beer please donate with the button below:
+[![](readmePic/lightningPay.png)](https://bti.btcpayprovider.com/api/v1/invoices?storeId=3kBVCRn3FCp6YrkmMEgD19Hq9Kboh59TpaezNKoMohhS&notifyEmail=taylorjbrown%40protonmail.com&price=5&currency=USD)
