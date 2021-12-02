@@ -97,4 +97,4 @@ How To Run:
 
 
 #### If you found this tool useful and feel like buying me a coffee/beer please donate with the button below:
-[![](readmePic/lightningPay.png)](https://bti.btcpayprovider.com/api/v1/invoices?storeId=3kBVCRn3FCp6YrkmMEgD19Hq9Kboh59TpaezNKoMohhS&notifyEmail=taylorjbrown%40protonmail.com&price=5&currency=USD)
+[![](readmePic/lightningPay.png)](https://www.lndonationscode.duckdns.org:48132/api/v1/invoices?storeId=583HTNQLDBMTSXghCgAZ1qKg9cD5LvmKGAjsBZsd5h6C&price=3&currency=USD)
