@@ -1,6 +1,6 @@
 [package]
 name = "groupme-rust-stats"
-version = "1.0.6"
+version = "1.0.7"
 authors = ["taylorjbrown <taylorjbrown@protonmail.com>"]
 edition = "2018"
 description = "A rust command line tool which downloads the complete history of a groupme chat group. It also runs a few analytics on the data and displays as a plain text file."
