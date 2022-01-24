@@ -97,4 +97,4 @@ How To Run:
 
 
 #### If you found this tool useful and feel like buying me a coffee/beer please donate with the button below (tor link):
-[![](readmePic/lightningPay.png)](https://qyalyxun6rwd6rguzjic2wycsumt4rv4q4sswyc2cbehnq6wokvivgad.onion/api/v1/invoices?storeId=9MoCExvosJ7hGKE4WQpb6xqAnZkSRrH5CQXUkPjqq9h&price=5&currency=USD)
+[![](readmePic/lightningPay.png)](https://qyalyxun6rwd6rguzjic2wycsumt4rv4q4sswyc2cbehnq6wokvivgad.onion/api/v1/invoices?storeId=9MoCExvosJ7hGKE4WQpb6xqAnZkSRrH5CQXUkPjqq9h&price=3&currency=USD)
